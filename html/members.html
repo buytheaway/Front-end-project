@@ -5,15 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Члены партии</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/members.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        .card-img-top {
-            height: 450px; /* Adjust as needed for uniform height */
-            width: 100%; /* Full width of the card */
-            object-fit: cover; /* Ensures the image covers the area */
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -38,7 +31,7 @@
                     <!-- Profile Cards -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/1.jpg" class="card-img-top" alt="Yakup Akbaev">
+                            <img src="../img/1.jpg" onclick="on(1)" class="card-img-top" alt="Yakup Akbaev">
                             <div class="card-body">
                                 <h5 class="card-title">Yakup Akbaev</h5>
                                 <p class="card-text">1876 – 1934</p>
@@ -47,7 +40,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/2.jpg" class="card-img-top" alt="Imam Alimbekov">
+                            <img src="../img/2.jpg" onclick="on(2)" class="card-img-top" alt="Imam Alimbekov">
                             <div class="card-body">
                                 <h5 class="card-title">Imam Alimbekov</h5>
                                 <p class="card-text">1883 — 1938</p>
@@ -56,7 +49,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/3.jpg" class="card-img-top" alt="Bukeikhanov Alikhan">
+                            <img src="../img/3.jpg" onclick="on(3)" class="card-img-top" alt="Bukeikhanov Alikhan">
                             <div class="card-body">
                                 <h5 class="card-title">Bukeikhanov Alikhan</h5>
                                 <p class="card-text">1866 - 1937 </p>
@@ -65,7 +58,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/4.jpg" class="card-img-top" alt="Ermekov Alimkhan">
+                            <img src="../img/4.jpg" onclick="on(4)" class="card-img-top" alt="Ermekov Alimkhan">
                             <div class="card-body">
                                 <h5 class="card-title">Ermekov Alimkhan</h5>
                                 <p class="card-text">1891 - 1970</p>
@@ -74,7 +67,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/5.jpg" class="card-img-top" alt="Gabbasov Halel">
+                            <img src="../img/5.jpg" onclick="on(5)" class="card-img-top" alt="Gabbasov Halel">
                             <div class="card-body">
                                 <h5 class="card-title">Gabbasov Halel</h5>
                                 <p class="card-text">1888 - 1931</p>
@@ -83,7 +76,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/6.jpg" class="card-img-top" alt="Kuderin Jumakhan">
+                            <img src="../img/6.jpg" onclick="on(6)" class="card-img-top" alt="Kuderin Jumakhan">
                             <div class="card-body">
                                 <h5 class="card-title">Kuderin Jumakhan</h5>
                                 <p class="card-text">1891 (1893) – 1938</p>
@@ -92,7 +85,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/7.jpg" class="card-img-top" alt="Kozybagarov Akhmetzhan">
+                            <img src="../img/7.jpg" onclick="on(7)" class="card-img-top" alt="Kozybagarov Akhmetzhan">
                             <div class="card-body">
                                 <h5 class="card-title">Kozybagarov Akhmetzhan</h5>
                                 <p class="card-text">1897 - 1937</p>
@@ -101,7 +94,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/8.jpg" class="card-img-top" alt="Marsekov Rayymbek">
+                            <img src="../img/8.jpg" onclick="on(8)" class="card-img-top" alt="Marsekov Rayymbek">
                             <div class="card-body">
                                 <h5 class="card-title">Marsekov Rayymbek</h5>
                                 <p class="card-text">1879 - 1937</p>
@@ -110,7 +103,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/9.jpg" class="card-img-top" alt="Idris Mustambaev">
+                            <img src="../img/9.jpg" onclick="on(9)" class="card-img-top" alt="Idris Mustambaev">
                             <div class="card-body">
                                 <h5 class="card-title">Idris Mustambaev</h5>
                                 <p class="card-text">1898 - 1937</p>
@@ -119,7 +112,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/10.jpg" class="card-img-top" alt="Sarsenov Biahmet">
+                            <img src="../img/10.jpg" onclick="on(10)" class="card-img-top" alt="Sarsenov Biahmet">
                             <div class="card-body">
                                 <h5 class="card-title">Sarsenov Biahmet</h5>
                                 <p class="card-text">1885 - 1921</p>
@@ -128,7 +121,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/11.jpg" class="card-img-top" alt="Turganbaev from Mann">
+                            <img src="../img/11.jpg" onclick="on(11)" class="card-img-top" alt="Turganbaev from Mann">
                             <div class="card-body">
                                 <h5 class="card-title">Turganbaev Mannan</h5>
                                 <p class="card-text">1886 - 1937</p>
@@ -137,7 +130,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="../img/12.jpg" class="card-img-top" alt="Tynyshbaev Mukhametzhan">
+                            <img src="../img/12.jpg" onclick="on(12)" class="card-img-top" alt="Tynyshbaev Mukhametzhan">
                             <div class="card-body">
                                 <h5 class="card-title">Tynyshbaev Mukhametzhan</h5>
                                 <p class="card-text">1879 - 1937</p>
@@ -147,6 +140,93 @@
                 </div>
             </div>
         </section>
+
+        <div id="overlay-cards">
+            <!-- #1 -->
+            <div id="overlay1" class="overlay" onclick="off(1)">
+                <div class="overlay-content">
+                    <h2>Yakup Akbaev</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+            <!-- #2 -->
+            <div id="overlay2" class="overlay" onclick="off(2)">
+                <div class="overlay-content">
+                    <h2>Imam Alimbekov</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+            <!-- #3 -->
+            <div id="overlay3" class="overlay" onclick="off(3)">
+                <div class="overlay-content">
+                    <h2>Bukeikhanov Alikhan</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+            <!-- #4 -->
+            <div id="overlay4" class="overlay" onclick="off(4)">
+                <div class="overlay-content">
+                    <h2>Ermekov Alimkhan</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+            <!-- #5 -->
+            <div id="overlay5" class="overlay" onclick="off(5)">
+                <div class="overlay-content">
+                    <h2>Gabbasov Halel</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+            <!-- #6 -->
+            <div id="overlay6" class="overlay" onclick="off(6)">
+                <div class="overlay-content">
+                    <h2>Kuderin Jumakhan</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+            <!-- #7 -->
+            <div id="overlay7" class="overlay" onclick="off(7)">
+                <div class="overlay-content">
+                    <h2>Kozybagarov Akhmetzhan</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+            <!-- #8 -->
+            <div id="overlay8" class="overlay" onclick="off(8)">
+                <div class="overlay-content">
+                    <h2>Marsekov Rayymbek</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+            <!-- #9 -->
+            <div id="overlay9" class="overlay" onclick="off(9)">
+                <div class="overlay-content">
+                    <h2>Idris Mustambaev</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+            <!-- #10 -->
+            <div id="overlay10" class="overlay" onclick="off(10)">
+                <div class="overlay-content">
+                    <h2>Sarsenov Biahmet</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+            <!-- #11 -->
+            <div id="overlay11" class="overlay" onclick="off(11)">
+                <div class="overlay-content">
+                    <h2>Turganbaev Mannan</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+            <!-- #12 -->
+            <div id="overlay12" class="overlay" onclick="off(12)">
+                <div class="overlay-content">
+                    <h2>Tynyshbaev Mukhametzhan</h2>
+                    <p>Info about Yakup Akbaev</p>
+                </div>
+            </div>
+        </div>
     </main>
     
     <footer class="bg-dark text-white text-center py-3">
@@ -158,7 +238,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
    
+
+    <script src="../js/members.js"></script>
 </body>
 </html>
