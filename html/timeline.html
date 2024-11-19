@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Хронология</title>
+    <link rel="stylesheet" href="../css/timeline.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -22,21 +23,19 @@
         </div>
     </header>
     <main>
-        <section class="section">
-            <div class="container">
-                <h2>Хронология</h2>
-                <ul>
-                    <li><strong>1917:</strong> Основание партии «Алаш».</li>
-                    <li><strong>1918:</strong> Создание автономии «Алаш-Орда».</li>
-                    <li><strong>1920:</strong> Роспуск партии.</li>
-                </ul>
-            </div>
-        </section>
+        <div class="slider-container">
+            <h1 id="range-title">Value: 50</h1>
+            <img id="range-image" src="../img/blue.png" alt="Dynamic Image" class="range-image">
+            <p id="range-text">This is a neutral description.</p>
+            <input type="range" id="range-slider" min="0" max="100" value="50">
+        </div>
     </main>
     <footer>
         <div class="container">
             <p>&copy; 2024 Партия "Алаш". Все права защищены.</p>
         </div>
     </footer>
+
+    <script src="../js/timeline.js"></script>
 </body>
 </html>
