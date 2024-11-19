@@ -92,7 +92,6 @@ const scoreElement = document.getElementById("score");
 
 function showQuestion() {
     if (currentQuestionIndex >= questions.length) {
-        console.log("Quiz finished. Showing result...");
         showResult();
         return;
     }
@@ -115,7 +114,6 @@ function checkAnswer(selectedIndex) {
         score++;
     }
     currentQuestionIndex++;
-    console.log(`Answered question ${currentQuestionIndex}. Current score: ${score}`);
     showQuestion();
 }
 
