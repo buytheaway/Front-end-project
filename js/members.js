@@ -10,6 +10,6 @@ function Cursor(){
     const cursor = document.getElementById('cursor');
     setTimeout(() => {
         cursor.remove();
-    }, 3000);
+    }, 2000);
 }
 Cursor();

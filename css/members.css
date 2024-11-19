@@ -51,7 +51,7 @@
     background-size: 144px 98px;
     background-repeat: no-repeat;
     background-position: 0 0;
-    animation: play-animation 1s steps(2) infinite;
+    animation: play-animation 0.5s steps(2) infinite;
     top: 450px;
     left: 500px;
 }
