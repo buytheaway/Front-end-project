@@ -19,6 +19,7 @@ body {
 .options, .quiz-container .options {
     list-style: none;
     padding: 0;
+    user-select: none;
 }
 
 .option, .quiz-container .options li {

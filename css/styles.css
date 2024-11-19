@@ -154,6 +154,7 @@ footer p {
 a {
     text-decoration: none;
     color: #fff;
+    user-select: none;
 }
 .hidden {
     display: none;
