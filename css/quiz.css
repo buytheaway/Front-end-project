@@ -3,7 +3,7 @@ body {
     text-align: center;
 }
 
-#quiz, #result {
+#quiz, #result, .quiz-container {
     max-width: 400px;
     margin: auto;
     padding: 20px;
@@ -16,38 +16,55 @@ body {
     display: none;
 }
 
-.result {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.options {
+.options, .quiz-container .options {
     list-style: none;
     padding: 0;
 }
 
-.option {
+.option, .quiz-container .options li {
     background-color: #eee;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.option:hover {
+.option:hover, .quiz-container .options button:hover {
     background-color: #ddd;
 }
 
-button {
+button, .quiz-container .options button, .result button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
     background-color: #007bff;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
+button:hover, .quiz-container .options button:hover, .result button:hover {
     background-color: #0056b3;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.result button {
+    margin-top: 15px;
+    background-color: #28a745;
+}
+
+.result button:hover {
+    background-color: #218838;
 }
